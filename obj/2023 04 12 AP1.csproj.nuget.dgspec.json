@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\GitHub\\ulbra\\2023 - 3 Semestre\\Programação Orientada a Objetos\\2024 04 12 AP1\\2024 04 12 AP1.csproj": {}
+    "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\2023 - 1\\Programação Orientada a objetos - Cássio\\2023 04 12 AP1\\2023 04 12 AP1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\GitHub\\ulbra\\2023 - 3 Semestre\\Programação Orientada a Objetos\\2024 04 12 AP1\\2024 04 12 AP1.csproj": {
+    "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\2023 - 1\\Programação Orientada a objetos - Cássio\\2023 04 12 AP1\\2023 04 12 AP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\GitHub\\ulbra\\2023 - 3 Semestre\\Programação Orientada a Objetos\\2024 04 12 AP1\\2024 04 12 AP1.csproj",
-        "projectName": "2024 04 12 AP1",
-        "projectPath": "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\GitHub\\ulbra\\2023 - 3 Semestre\\Programação Orientada a Objetos\\2024 04 12 AP1\\2024 04 12 AP1.csproj",
+        "projectUniqueName": "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\2023 - 1\\Programação Orientada a objetos - Cássio\\2023 04 12 AP1\\2023 04 12 AP1.csproj",
+        "projectName": "2023 04 12 AP1",
+        "projectPath": "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\2023 - 1\\Programação Orientada a objetos - Cássio\\2023 04 12 AP1\\2023 04 12 AP1.csproj",
         "packagesPath": "C:\\Users\\adeni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\GitHub\\ulbra\\2023 - 3 Semestre\\Programação Orientada a Objetos\\2024 04 12 AP1\\obj\\",
+        "outputPath": "C:\\Users\\adeni\\Meu Drive (adenilson@rede.ulbra.br)\\ULBRA\\2023 - 1\\Programação Orientada a objetos - Cássio\\2023 04 12 AP1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adeni\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
