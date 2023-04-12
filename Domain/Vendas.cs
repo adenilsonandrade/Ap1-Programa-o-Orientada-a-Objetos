@@ -8,7 +8,7 @@ namespace _2023_04_12_AP1.Domain
     public class Vendas
     {
         public Clientes Cliente { get; set; }
-        public PessoaJuridica ClientePJ { get; set; }
+        public ClientesPJ ClientePJ { get; set; }
         public List<Produtos> Produtos { get; set; }
 
         public Vendas(Clientes cliente)
@@ -17,7 +17,7 @@ namespace _2023_04_12_AP1.Domain
             Produtos = new List<Produtos>();
         }
 
-        public Vendas(PessoaJuridica cliente)
+        public Vendas(ClientesPJ cliente)
         {
             ClientePJ = cliente;
             Produtos = new List<Produtos>();

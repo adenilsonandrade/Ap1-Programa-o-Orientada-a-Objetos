@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace _2023_04_12_AP1.Domain
 {
-    public class PessoaJuridica : Clientes
+    public class ClientesPJ : Clientes
     {
         public string CNPJ { get; protected set; }
 
 
-        public PessoaJuridica(int parametroIdCliente, string parametroNome, string parametroCPF, string paramentroEndereco, string parametroTelefone, string parametroCNPJ) : base(parametroIdCliente, parametroNome, parametroCPF, paramentroEndereco, parametroTelefone)
+        public ClientesPJ(int parametroIdCliente, string parametroNome, string parametroCPF, string paramentroEndereco, string parametroTelefone, string parametroCNPJ) : base(parametroIdCliente, parametroNome, parametroCPF, paramentroEndereco, parametroTelefone)
         {
             CNPJ = parametroCNPJ;
         }
@@ -25,9 +25,9 @@ namespace _2023_04_12_AP1.Domain
             Console.WriteLine("Lista de Clientes (Pessoa Jurídica):");
             foreach (var cliente in listaClientes)
             {
-                if (cliente is PessoaJuridica pessoaJuridica)
+                if (cliente is ClientesPJ clientePJ)
                 {
-                    Console.WriteLine($"ID: {cliente.IdCliente}\nNome: {cliente.Nome}\nEndereço: {cliente.Endereco}\nTelefone: {cliente.Telefone}\nCNPJ: {pessoaJuridica.CNPJ}");
+                    Console.WriteLine($"ID: {cliente.IdCliente}\nNome: {cliente.Nome}\nEndereço: {cliente.Endereco}\nTelefone: {cliente.Telefone}\nCNPJ: {clientePJ.CNPJ}");
                 }
             }
         }

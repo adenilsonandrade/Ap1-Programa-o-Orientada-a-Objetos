@@ -18,7 +18,7 @@ namespace _2023_04_12_AP1.Domain
 
             // Cria clientes
             Clientes cliente1 = new Clientes(1, "Joao", "045.689.136-56", "Rua Joaquim Porto", "51973285761");
-            PessoaJuridica cliente2 = new PessoaJuridica(2, "Hotel", "", "Av 10", "51 36641588", "10.469.482/0001-69");
+            ClientesPJ cliente2 = new ClientesPJ(2, "Hotel", "", "Av 10", "51 36641588", "10.469.482/0001-69");
 
             // Criar venda 1
             Vendas venda1 = new Vendas(cliente1); // Passa o objeto do cliente como parâmetro no construtor
