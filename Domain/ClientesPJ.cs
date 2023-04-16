@@ -7,10 +7,10 @@ namespace _2023_04_12_AP1.Domain
 {
     public class ClientesPJ : Clientes
     {
-        public string CNPJ { get; protected set; }
+        public string CNPJ { get; private set; }
 
 
-        public ClientesPJ(int parametroIdCliente, string parametroNome, string parametroCPF, string paramentroEndereco, string parametroTelefone, string parametroCNPJ) : base(parametroIdCliente, parametroNome, parametroCPF, paramentroEndereco, parametroTelefone)
+        public ClientesPJ(string parametroNome, string parametroCNPJ, string paramentroEndereco, string parametroTelefone) : base(parametroNome, paramentroEndereco, parametroTelefone)
         {
             CNPJ = parametroCNPJ;
         }
@@ -20,14 +20,36 @@ namespace _2023_04_12_AP1.Domain
             this.CNPJ = parametroCNPJ;
         }
 
-        public override void ListarClientes(List<Clientes> listaClientes)
+        public static List<Clientes> listaClientesPJ = new List<Clientes>();
+
+        public static void CadastrarCliente()
         {
-            Console.WriteLine("Lista de Clientes (Pessoa Jurídica):");
-            foreach (var cliente in listaClientes)
+            Console.Write("\nDigite o Nome do Cliente PJ: ");
+            string nomeClientePJ = Console.ReadLine();
+            Console.Write("\nDigite o Endereço do Cliente: ");
+            string endereco = Console.ReadLine();
+            Console.Write("\nDigite o Telefone do Cliente: ");
+            string telefone = Console.ReadLine();
+            Console.Write("\nDigite o CNPJ do Cliente: ");
+            string cnpj = Console.ReadLine();
+            ClientesPJ clientePJ = new ClientesPJ(nomeClientePJ, cnpj, endereco, telefone);
+            listaClientesPJ.Add(clientePJ);
+            Console.WriteLine("\nCliente Cadastrado.");
+        }
+
+        public static void ListarClientes()
+        {
+            Console.WriteLine("\n-------Pessoa Jurídica-------");
+            if (listaClientesPJ.Count == 0)
             {
-                if (cliente is ClientesPJ clientePJ)
+                Console.WriteLine("Nenhum cliente cadastrado.");
+            }
+            else
+            {
+                Console.WriteLine("Lista de Clientes:");
+                foreach (var cliente in listaClientesPJ)
                 {
-                    Console.WriteLine($"ID: {cliente.IdCliente}\nNome: {cliente.Nome}\nEndereço: {cliente.Endereco}\nTelefone: {cliente.Telefone}\nCNPJ: {clientePJ.CNPJ}");
+                    Console.WriteLine($"ID: {cliente.IdCliente} | Nome: {cliente.Nome} | CNPJ: {((ClientesPJ)cliente).CNPJ} | Endereço: {cliente.Endereco} | Telefone: {cliente.Telefone}");
                 }
             }
         }
